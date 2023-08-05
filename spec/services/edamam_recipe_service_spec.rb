@@ -14,8 +14,11 @@ RSpec.describe EdamamRecipeService do
         expect(first_result).to have_key(:recipe)
         expect(first_result[:recipe]).to be_a(Hash)
         
+        expect(first_result[:recipe]).to have_key(:label)
         expect(first_result[:recipe][:label]).to be_a(String)
+        expect(first_result[:recipe]).to have_key(:uri)
         expect(first_result[:recipe][:uri]).to be_a(String)
+        expect(first_result[:recipe]).to have_key(:image)
         expect(first_result[:recipe][:image]).to be_a(String)
       end
     end

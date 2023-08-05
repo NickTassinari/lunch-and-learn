@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=bc1728b6&app_key=7396aa5657ea317b7fd44e40ffcfda93&q=nicks%20very%20own%20country&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 05 Aug 2023 17:21:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-210.ec2.internal/10.0.1.210
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - b9b5bafcafe82549abefbd8029500b23
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Sat, 05 Aug 2023 17:21:42 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=bc1728b6&app_key=7396aa5657ea317b7fd44e40ffcfda93&q=&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 05 Aug 2023 17:21:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-210.ec2.internal/10.0.1.210
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - fa474092ff589e0270201a6a5c3d42b9
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Sat, 05 Aug 2023 17:21:42 GMT
+recorded_with: VCR 6.2.0

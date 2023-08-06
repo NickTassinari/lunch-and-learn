@@ -16,6 +16,21 @@ RSpec.describe RestCountriesService do
       end
     end
 
+    describe ".all_countries" do 
+      it "returns a JSON object from API", :vcr do 
+        response = RestCountriesService.all_countries
+        expect(response).to be_an(Array)
+        expect(response.first).to be_a(Hash)
+
+        first_result = response.first
+        expect(first_result).to have_key(:name)
+        expect(first_result[:name]).to be_a(Hash)
+
+        expect(first_result[:name]).to have_key(:common)
+        expect(first_result[:name][:common]).to be_a(String)
+      end
+    end
+
     describe ".get_url", :vcr do 
       it "returns JSON hash from response body" do 
         url = RestCountriesService.get_url("/v3.1/all")

@@ -1,0 +1,229 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyAq8Lq-AqCmZ6nIAAJbpj7rNzyBRf7RJHk&part=snippet&q=japan&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 06 Aug 2023 18:51:54 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "vWaH3_6gZ65jk8wiT1PIXedqsR8",
+          "nextPageToken": "CAUQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 66,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "TDJ1Gerll8eLZn2iTheH_9sIaJ0",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "74g8q804ukA"
+              },
+              "snippet": {
+                "publishedAt": "2021-06-19T05:42:06Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Japan",
+                "description": "Sources: \"A Concise History of Japan\" (2015) by Brett L. Walker. Cambridge University Press, UK \"A Brief History of Japan\" (2017) ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/74g8q804ukA/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/74g8q804ukA/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/74g8q804ukA/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-06-19T05:42:06Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "TPYCStAGRANAAqlp0fpjBiCf_jY",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "fEvBT95qfJE"
+              },
+              "snippet": {
+                "publishedAt": "2022-10-13T22:52:32Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Palau",
+                "description": "Pictures Requiring Attribution: Madara Skaistkalne: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-10-13T22:52:32Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "cAOrVcaOpeJeGYY-x18YP8V5YoQ",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "CqIe5txhi1o"
+              },
+              "snippet": {
+                "publishedAt": "2019-09-05T07:11:21Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Brunei",
+                "description": "Pictures Requiring Attribution: Kowloonese: https://commons.wikimedia.org/wiki/File:SwiftletBirdNests.jpg Bubbha at English ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/CqIe5txhi1o/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/CqIe5txhi1o/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/CqIe5txhi1o/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-05T07:11:21Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "TDCozssNwt1KgB-CB4i3mXW5vKc",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "s31ymVzOfGY"
+              },
+              "snippet": {
+                "publishedAt": "2019-09-24T08:31:33Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "15 Things Not From the Country You Think",
+                "description": "MrHistory.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-24T08:31:33Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "OZ2c8xTmivLOpiWNds8F6i7e770",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "cH6RMbV4tSo"
+              },
+              "snippet": {
+                "publishedAt": "2022-08-31T23:42:40Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of North Korea",
+                "description": "Audio: QuocDung1604: https://commons.wikimedia.org/wiki/File:National-anthem-north-korea_ogg.ogg Pictures Requiring ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/cH6RMbV4tSo/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/cH6RMbV4tSo/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/cH6RMbV4tSo/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-08-31T23:42:40Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Sun, 06 Aug 2023 18:51:54 GMT
+recorded_with: VCR 6.2.0

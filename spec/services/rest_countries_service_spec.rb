@@ -13,6 +13,7 @@ RSpec.describe RestCountriesService do
         expect(first_result[:name]).to be_a(Hash)
         expect(first_result[:name]).to have_key(:common)
         expect(first_result[:name][:common]).to be_a(String)
+        expect(first_result[:capital]).to eq(["Lima"])
       end
     end
 

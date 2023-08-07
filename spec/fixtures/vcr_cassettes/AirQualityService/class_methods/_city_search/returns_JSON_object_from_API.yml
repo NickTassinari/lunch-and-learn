@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/airquality?city=Paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - Ry0ZyUppcigRst6N5yeGRg==cu7zSyuFgwMAmgy3
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 07 Aug 2023 15:11:57 GMT
+      X-Amzn-Requestid:
+      - 604891d6-a4ec-473e-81f6-e0c051e67089
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - JS51lGnKPHcFQ1Q=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-64d109bd-4c6e60af6abd58ef227a2b96;Sampled=0;lineage=d5ca6d75:0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a827400055d7bbab6e387896737d4e50.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - Yybbd8W2WTy6NJfuxVFJoR9Wb-68NKm93DRwYSwb2QA70r02KDCwFw==
+    body:
+      encoding: UTF-8
+      string: '{"CO": {"concentration": 216.96, "aqi": 2}, "NO2": {"concentration":
+        2.66, "aqi": 3}, "O3": {"concentration": 75.82, "aqi": 102}, "SO2": {"concentration":
+        2.44, "aqi": 3}, "PM2.5": {"concentration": 2.95, "aqi": 9}, "PM10": {"concentration":
+        3.82, "aqi": 3}, "overall_aqi": 102}'
+  recorded_at: Mon, 07 Aug 2023 15:11:57 GMT
+recorded_with: VCR 6.2.0

@@ -23,5 +23,19 @@ describe "Index air quality API" do
     expect(air_quality[:data][:attributes][:pm25_concentration]).to be_a(Float)
     expect(air_quality[:data][:attributes]).to have_key(:co_concentration)
     expect(air_quality[:data][:attributes][:co_concentration]).to be_a(Float)
+    expected_json = {:data=>
+                      {
+                      :id=>nil,
+                      :type=>"air_quality",
+                      :attributes=>
+                        {
+                        :city=>"Abuja", 
+                        :aqi=>25, 
+                        :pm25_concentration=>4.21, 
+                        :co_concentration=>433.92
+                        }
+                      }
+                    }
+    expect(air_quality).to eq(expected_json)
   end
 end

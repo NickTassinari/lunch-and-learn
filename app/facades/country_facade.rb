@@ -11,6 +11,10 @@ class CountryFacade
     end
   end
 
+  def self.get_capital(country)
+    results(country)[:capital][0]
+  end
+
   def self.results(country)
     RestCountriesService.search(country)[0]
   end

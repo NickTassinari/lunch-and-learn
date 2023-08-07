@@ -20,6 +20,13 @@ RSpec.describe CountryFacade do
       end
     end
 
+    describe ".get_capital" do 
+      it "returns string of capital city of given country", :vcr do 
+        expect(CountryFacade.get_capital("Peru")).to be_a(String)
+        expect(CountryFacade.get_capital("Peru")).to eq("Lima")
+      end
+    end
+
     describe ".results" do 
       it "returns array of countries matching param", :vcr do 
         expect(CountryFacade.results("ital")).to be_a(Hash)

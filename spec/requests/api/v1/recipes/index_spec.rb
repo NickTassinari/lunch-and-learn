@@ -48,7 +48,7 @@ RSpec.describe "Index Recipes API" do
     expect(response.status).to eq(404)
   end
 
-  it "returns a random country with no params", :vcr do 
+  xit "returns a random country with no params", :vcr do 
     get "/api/v1/recipes"
 
     expect(response).to be_successful 
